@@ -10,7 +10,6 @@ const forecast = function (latitude, longitude, callback) {
     } else if (body.error) {
       callback('Unable to find location.') 
     } else {
-        console.log(body)
       const temp = body.currently.temperature
       const precip = body.currently.precipProbability
       const uv = body.currently.uvIndex
